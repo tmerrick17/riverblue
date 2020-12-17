@@ -1,0 +1,539 @@
+/* * 
+* Name: Trevor Merrick
+* Date: 11/30/2020
+* File Name: styles.css
+* */
+
+/* * ===================
+   *  Table of Contents
+   * ===================
+ 
+   * 1: Global Styling
+
+   * 2: Styling for Header tag
+   * 3: Styling for Nav tag
+
+   * 4: Styling for Hero image
+   * 5: Styling for middle text section of home page
+   * 6: Styling for Charge icons
+   * 7: Styling of Button section
+   * 8: Styling of Footer tag
+
+   * 9: Styles for Main Content for Resources page
+
+   * 10: Styling for Tablet Viewport: 599px to 887px
+   * 11: Styling for Tablet Tweekpoint: 888px to 984px
+   * 12: Styling for Tablet Tweekpoint: 985px to 1188px
+   * 13: Styling for Desktop: 1189xp to 1366
+   * 14: Styling for Desktop Tweekpoint: 1367xp to 1599xp
+* */
+
+
+/* * *********************** MOBILE STYLES *********************** */
+/* * 1: Global Styling */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    max-width: 1094px;         
+    margin: 0 auto;
+}
+
+body {
+    background-color: #FFF;
+}
+
+h1, h2, h3, p, li {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* * 2: Styling for Header tag */
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2em 0 2em;
+}
+
+/* * Car Icon in Header */
+header img {
+    width: 4em;
+}
+
+/* * Header Title (Riverblue Electric) */
+header h1 {
+    font-size: 2.2em;
+    font-weight: 400;
+    color: #024186;
+    padding-top: .4em;
+}
+
+
+/* * 3: Styling for Nav tag */
+nav {
+    padding: 1%;
+    background-color: #024186;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    border-top: 2px solid #FFF;
+    padding: .5em 0 .5em;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav a:link { 
+    color: white; 
+}
+
+nav a:visited { 
+    color: #dbdbdb; 
+}
+
+nav a:hover {
+    color: #87cefa; 
+}
+
+nav a:active {
+    color: #707070; 
+}
+
+
+/* * 4: Styling for Hero image */
+.home-hero {
+    display: none;
+}
+
+
+/* * 5: Styling for middle text section of home page */
+.statement-container {
+    background-color: #024186;
+    margin: 1.5em auto;
+    color: white;
+}
+
+.statement-container h3 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.statement-container p {
+    padding: 0 1rem 1rem;
+    line-height: 1.5rem;
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+
+/* * 6: Styling for Charge icons */
+.charge-icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 3em auto;
+}
+
+.charge-icon-group {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.charge-icon-group div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ea7a9;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+}
+
+.charge-icon-group img {
+    width: 5rem;
+}
+
+.charge-icon-group h3 {
+    text-align: center;
+    padding: 1.2rem 0 1.2rem;
+    font-size: 1.5rem;
+}
+
+.charge-icon-group:link {
+    color: #024186;
+}
+
+.charge-icon-group:visited {
+    color: #646464;
+}
+
+.charge-icon-group:hover {
+    color: #87cefa;
+    font-weight: 400;
+}
+.charge-icon-group:active {
+    color: #000;
+}
+
+
+/* * 7: Styling of Locations Button section */
+.action {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #024186;
+}
+
+.action h2 {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 1rem;
+    padding: 4rem 0 0;
+    text-align: center;
+}
+
+.action button {
+    background-color: #478BC0;
+    border-radius: 30px;
+    margin: 2rem 0 4rem;
+    padding: 2rem 3rem;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.action button:link {
+    color: #FFF
+}
+  
+.action button:visited {
+    color: #646464;
+}
+  
+.action button:hover {
+    color: #87cefa;
+}
+
+.action button:active {
+    color: #000;
+}
+
+
+/* * 8: Styling of Footer tag */
+footer {
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    padding: 0 1em;
+}
+
+.social-logo {
+    width: 50px;
+    margin: 2em 1.1em;
+}
+
+.learn {
+    padding-top: 1em;
+    max-width: 65ch;
+    text-align: justify;
+}
+
+.logo-designer {
+    margin: 1em;
+}
+
+
+/* * *********************** STYLES FOR RESOURCES.HTML *********************** */
+
+/* * 9: Styles for Main Content for Resources page */
+.resources-content {
+    background-color: #FFF;
+}
+
+.resources-content h2, #resources-content h3 {
+    color: #024186;
+}
+
+.resources-content h2 {
+    padding: 1em .5em;
+}
+
+.ev-table-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.title-image h3 {
+    padding: 1em 1em;
+    border-top: 8px solid #024186;
+    color: #000;
+}
+
+/* ! Need to figure out why this doesn't work */
+.title-image h3:first-child {
+    /* border-top: none; */
+}
+
+.title-image ul {
+    margin: 0 3em 2em;
+    color: #000;
+}
+
+.title-image img {
+    display: block;
+    /* margin: 0 auto .8em; */
+    margin-bottom: .8em;
+    width: 100%;
+
+}
+
+/* ! Need to figure out why this doesn't work */
+.title-image img:last-child {
+    /* border-bottom: 8px solid #024186; */
+}
+
+/* * *********************** MEDIA QUERIES *********************** */
+
+/* * *********************** TABLET STYLES *********************** */
+/* * 10: Styling for Tablet Viewport: 599px to 887px */
+@media screen and (min-width: 599px) {
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    header img {
+        margin-right: 1.5em;
+    }
+
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        border-top: none;
+        margin: .3em .5em;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: .15rem;
+        width: 0%;
+        top: 0;
+        background-color: #87cefa;
+        position: absolute;
+        transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        width: 100%;
+    }
+    
+    .home-hero {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .statement-container {
+        margin: 0 auto;
+        padding: 1.5em 2em;
+    }
+
+    .statement-container h3 {
+        font-size: 1.8em;
+    }
+
+    .statement-container p {
+        font-size: 1.25em;
+    }
+
+    .charge-icon-wrapper{
+        gap: 5em;
+        margin: 3em 4em;
+    }
+
+    .charge-icon-group h3 {
+        font-size: 1.8em;
+    }
+
+    .action h2 {
+        padding: 2em 1.6em 0;
+    }
+
+    .social-logo {
+        margin: 3em 2.5em;
+    }
+
+    .copyright-info {
+        padding-top: 1.5em;
+    }
+
+    .learn {
+        padding: 1em 3em;
+    }
+
+    .resources-content h2 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .title-image h3 {
+        font-size: 1.7em;
+        margin: 0 2em 0
+    }
+
+    .title-image ul {
+        display: block;
+        margin: 0 8em 2em;
+        color: #000;
+    }
+
+    .title-image li {
+        font-size: 1.3em;
+    }
+
+    .title-image img {
+        margin: 0 auto .8em;
+    }
+}
+
+
+/* * 11: Styling for Tablet Tweekpoint: 888px to 984px */
+@media screen and (min-width: 888px) {
+    header h1 {
+        font-size: 3em;
+    }
+    
+    header img {
+        width: 4em;
+    }
+    
+    nav li {
+        display: inline-block;
+        border-top: none;
+        margin: .3em 1.6em;
+    }
+
+    .statement-container {
+        padding: 1.5em 4em;
+    }
+    
+    .charge-icon-wrapper{
+        gap: 8em;
+        margin: 3em 4em;
+    }
+
+    footer {
+        padding: 0 5em;
+    }
+
+    .title-image h3 {
+        margin: 0 3em 0;
+    }
+
+    .title-image ul {
+        margin: 0 10em 2em;
+    }
+
+    .title-image img {
+        width: 80%;
+    }
+
+}
+
+
+/* * 12: Styling for Tablet Tweekpoint: 985px to 1188px */
+@media screen and (min-width: 984px) {
+    body {
+        background: #192128 url("../images/other_images/pw_maze_black.png");
+    }
+
+    .statement-container {
+        padding: 1.5rem 6rem;
+    }
+    
+    .charge-icon-wrapper {
+        background-color: #FFF;
+        gap: 2em;
+        margin: 0;
+        padding: 2rem 0;
+    }
+}
+
+
+/* * *********************** DESKTOP STYLES *********************** */
+/* * 13: Styling for Desktop: 1189xp to 1366 */
+@media screen and (min-width: 1189px) {
+    .statement-container {
+        padding: 1.5em 8em;
+    }
+
+    .charge-icon-wrapper {
+        gap: 1em;
+    }
+    
+    footer {
+        padding: 0 8em;
+    }
+
+    .title-image h3 {
+        margin: 0 6em 0;
+    }
+
+    .title-image ul {
+        margin: 0 15em 2em;
+    }
+
+    .title-image img {
+        width: 70%;
+    }
+}
+
+
+/* * 14: Styling for Desktop Tweekpoint: 1367xp to 1599xp */
+@media screen and (min-width: 1367px) {
+    body {
+        background: #192128 url("../images/other_images/pw_maze_black.png");
+    }
+
+    .charge-icon-group {
+        margin: 2rem auto;
+    }
+}
+
+
